@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5968BC;
+    margin: 0;
+    padding: 0;
+}
+
+.cabeçario {
+    background-color: #23315D;
+    color: white;
+    padding: 10px 20px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    h1 {margin: 0;
+        font-size: 25px;
+        margin-left: 50px;}
+
+    ul {list-style: none;
+        margin: 0;
+        display: flex;
+        gap: 20px;}
+
+    li a {color: white;
+          text-decoration: none;
+          font-size: 16px;}
+}
+
+.botao {
+    background-color: #5968BC;
+    color: white;
+    text-align: center;
+    text-decoration: none; /*Retira o sublinado*/
+    border-radius: 5px; /*Arredonda*/
+    padding: 6px 50px; /*Espaço envolta do conteúdo*/
+    }
+.botao:hover {
+    background-color: #609FDD; /*Cor ao colocar o mouse*/
+    }
+
+.rodape {
+    background-color: #23315D;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    border-radius: 5px; /*Arredonda*/
+    padding: 10px 20px; /*Espaço envolta do conteúdo*/
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #23315d;
+    padding-top: 50px;
+    color: #fff;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+    ul li {
+        padding: 10px;
+        cursor: pointer;
+      }
+    ul li a {
+        color: white;
+      }
+  }
+  /* Estilo para o botão de abrir o menu */
+  #menu-btn {
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+    color: #fff;
+    font-size: 25px;
+  }
+
+.card-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+    margin-block-end: 20px;
+
+    img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    }
+
+    h3 {
+    margin: 10px;
+    }
+
+    p {
+    color: black;
+    text-align: justify;
+    }
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    
+    input[type="password"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    }
+}
+
+
+

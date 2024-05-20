@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Cadastro / Login</title>
+    <link rel="stylesheet" href="Geral.css">
+    <script src="Geral.js"></script>
+    <script src="L_Usuários.js"></script>
+
+    <style>
+
+        .login-form {
+            padding: 20px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                display: block;
+                margin: 5px;
+            }
+
+            input {
+            width: 580px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #609FDD;
+            border-radius: 5px;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+            background-color: #5968BC;
+            width: 300px;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            }
+
+            input[type="submit"]:hover,
+            input[type="reset"]:hover {
+            background-color: #609FDD; /*Cor ao colocar o mouse*/
+            }
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+
+            .image-container {
+            margin-right: 20px;
+            }
+            .image-container img {
+            width: 400px; 
+            height: auto;
+            border-radius: 5px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        <div id="menu-btn">&#9776;</div>
+        <div id="menu">
+          <ul>
+            <li><a href="inicio.html">PÁGINA INICIAL</a></li>
+            <li><a href="T_Cadastro_Login.html">LOGIN / CADASTRO</a></li>
+            <li><a href="T_Pesquisa.html">PESQUISA DE VAGAS</a></li>
+          </ul>
+        </div>
+        <header class="cabeçario">
+            <nav><h1>IT JOBS</h1></nav>
+            <nav><ul>
+                <li><a href="vagas.html">VAGAS &nbsp;|</a></li>
+                <li><a href="inicio.html" class="botao">INICIO</a></li>
+            </ul></nav>
+        </header>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="image-container"> <img src="img.png">
+            </div>
+        
+            <div class="login-form">
+                <h2>FAÇA SEU LOGIN:</h2>
+                <form id="loginForm">
+                    <label for="email">Informe seu e-mail:</label>
+                    <input type="text" id="email" name="email" placeholder="Digite aqui" required>
+                    <label for="senha">Digite sua senha:</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Digite aqui" required>
+                        <button type="button" onclick="togglePassword()">Mostrar</button>
+                    </div>
+                    <label for="tipoUsuarioLogin">Tipo de Usuário:</label>
+                    <select id="tipoUsuarioLogin" name="tipoUsuarioLogin" required>
+                        <option value="" disabled selected>Selecione o tipo de usuário</option>
+                        <option value="empresa">Empresa</option>
+                        <option value="profissional">Profissional</option>
+                    </select><br><br>
+                    <input type="submit" value="ENTRAR">
+                    <input type="reset" value="LIMPAR">
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="titulo">
+                <h2>NÃO POSSUE CADASTRO? CADASTRE-SE AQUI:</h2>
+            </div>
+            <div class="card-section">
+                <div class="card">
+                    <img src="img.png">
+                    <h3>Cadastre-se como Empresa</h3>
+                    <p>Você terá acesso a uma ampla gama de recursos para encontrar os melhores talentos e 
+                        impulsionar o crescimento de sua equipe.</p><br><br>
+                        <li><a href="T_Cadastro_Empresa.html" class="botao">EMPRESA</a></li>
+                </div>
+                <div class="card">
+                    <img src="img.png">
+                    <h3>Cadastre-se como Profissional</h3>
+                    <p>Você abrirá portas para novas oportunidades de carreira e crescimento profissional. 
+                        Após o registro, você poderá criar um perfil detalhado que destaca suas habilidades, 
+                        experiência e realizações.</p><br>
+                        <li><a href="T_Cadastro_Profissional.html" class="botao">PROFISSIONAL</a></li>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Rodapé - © 2024 IT JOBS</p>
+    </footer>
+
+</body>
+</html>
