@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Busca de Vagas</title>
+    <link rel="stylesheet" href="Busca_De_Vagas.css" />
+    <link rel="stylesheet" href="Geral.css" />
+  </head>
+
+  <style>
+    .campo-pesquisa {
+      text-align: center;
+      background-color: #fff;
+      height: 100px;
+      background-size: auto;
+    }
+
+    .campo-pesquisa input[type="text"] {
+      width: 60%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-top: 40px;
+    }
+
+    .campo-pesquisa input[type="submit"] {
+      background-color: #5968bc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-candidatar {
+      background-color: #5968bc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div id="menu-btn">&#9776;</div>
+      <div id="menu">
+        <ul>
+          <li><a href="T_Inicial.html">PÁGINA INICIAL</a></li>
+          <li><a href="T_Cadastro_Login.html">LOGIN / CADASTRO</a></li>
+          <li><a href="T_Pesquisa.html">PESQUISA DE VAGAS</a></li>
+        </ul>
+      </div>
+      <header class="cabeçario">
+        <nav><h1>IT JOBS</h1></nav>
+        <nav>
+          <ul>
+            <li><a href="vagas.html">VAGAS &nbsp;|</a></li>
+            <li><a href="T_Inicial.html" class="botao">INICIO</a></li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+
+    <div class="container">
+      <h1>Busca de Vagas de Emprego</h1>
+
+      <div class="campo-pesquisa">
+        <form action="#">
+          <input type="text" placeholder="Pesquisar..." />
+          <input type="submit" value="Pesquisar" />
+        </form>
+      </div>
+
+      <div class="vaga" onclick="toggleDescricao('descricao1')">
+        <h2 class="titulo-vaga">Desenvolvedor Web</h2>
+        <div id="descricao1" class="descricao">
+          <p>
+            Descrição da vaga de Desenvolvedor Web. Requisitos: HTML, CSS,
+            JavaScript.
+          </p>
+          <button class="btn-candidatar">Candidatar-se</button>
+        </div>
+      </div>
+      <div class="vaga" onclick="toggleDescricao('descricao2')">
+        <h2 class="titulo-vaga">Analista de Dados</h2>
+        <div id="descricao2" class="descricao">
+          <p>
+            Descrição da vaga de Analista de Dados. Requisitos: SQL, Python,
+            Análise Estatística.
+          </p>
+          <button class="btn-candidatar">Candidatar-se</button>
+        </div>
+      </div>
+      <div class="vaga" onclick="toggleDescricao('descricao3')">
+        <h2 class="titulo-vaga">Designer Gráfico</h2>
+        <div id="descricao3" class="descricao">
+          <p>
+            Descrição da vaga de Designer Gráfico. Requisitos: Photoshop,
+            Illustrator, Criatividade.
+          </p>
+          <button class="btn-candidatar">Candidatar-se</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="Busca_De_Vagas.js"></script>
+
+    <footer class="rodape">
+      <p>Rodapé - © 2024 IT JOBS</p>
+    </footer>
+  </body>
+</html>

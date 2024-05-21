@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 1000;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+}
+
+.vaga {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vaga:hover {
+  background-color: #f0f0f0;
+}
+
+.titulo-vaga {
+  margin: 0;
+  font-size: 18px;
+  color: #5968bc;
+}
+
+.descricao {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+}
