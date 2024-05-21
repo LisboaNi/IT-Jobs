@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Geral.css">
+    <script src="Geral.js"></script>
+    <script src="L_Usuários.js"></script>
+
+    <style>
+
+        .quem-somos {
+            padding: 20px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                display: block;
+                margin: 5px;
+            }
+
+            input {
+            width: 580px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #609FDD;
+            border-radius: 5px;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+            background-color: #5968BC;
+            width: 300px;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            }
+
+            input[type="submit"]:hover,
+            input[type="reset"]:hover {
+            background-color: #609FDD; /*Cor ao colocar o mouse*/
+            }
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.5;
+            
+        }
+            .image-container {
+            margin-right: 100px;
+            }
+            .tittle {
+                text-align: center; 
+            }
+
+        .text {
+            width: 500px;
+        }
+           
+            .image-container img {
+            width: 600px; 
+            height: auto;
+            border-radius: 60px;
+            margin-left: 200px;
+            }
+
+            .campo-pesquisa {
+            text-align: center;
+            background-color: #fff;
+            height: 300px;
+            background-size: auto;
+        }
+
+        .titulo-pesquisa {
+           padding: 50px 0 0 0;
+           
+        }
+
+        .campo-pesquisa input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 40px;
+        }
+
+        .campo-pesquisa input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        <div id="menu-btn">&#9776;</div>
+        <div id="menu">
+          <ul>
+            <li><a href="T_Inicial.html">PÁGINA INICIAL</a></li>
+            <li><a href="T_Cadastro_Login.html">LOGIN / CADASTRO</a></li>
+            <li><a href="T_Pesquisa.html">PESQUISA DE VAGAS</a></li>
+          </ul>
+        </div>
+        <header class="cabeçario">
+            <nav><h1>IT JOBS</h1></nav>
+            <nav><ul>
+                <li><a href="vagas.html">VAGAS &nbsp;|</a></li>
+                <li><a href="T_Inicial.html" class="botao">INICIO</a></li>
+            </ul></nav>
+        </header>
+    </header>
+
+    <main>
+        <section>
+           
+           
+           
+           
+            <div class="container">
+                <div class="image-container"> <img src="img.png">
+            </div>
+        
+            <div class="quem-somos">
+                <div class="tittle"><h2>QUEM SOMOS:</h2></div>
+                 <p class="text">O IT Jobs é uma plataforma inovadora que visa conectar
+                    empresas em busca de talentos com profissionais qualificados
+                    embusca de oportunidades de emprego.                   
+                    Nosso objetivo é facilitar o processo de recrutamento e seleção,
+                    proporcionando uma experiência eficiente e transparente para ambas
+                    as partes. O mercado de TI cresce diariamente em resposta à necessidade de conhecimento                                        
+                     em diversas áreas da tecnologia da informação, demandadas por várias empresas. O avanço
+                    do mercado de TI foi acelerado pela pandemia da COVID-19, forçando as empresas a procurar
+                    novos meios de funcionamento. 
+                    </p>
+                    </div>
+                    
+                    
+                    
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="titulo">
+                <h2>AVALIAÇÕES</h2>
+            </div>
+            <div class="card-section">
+                <div class="card">
+                    <img src="usuario.avif">
+                    <h3>Maria da Silva</h3>
+                    <p>Fantástica plataforma de busca de emprego! As funcionalidades de alerta
+                         de vagas são muito úteis, e o suporte ao usuário é ágil e eficiente. 
+                         Encontrei várias oportunidades interessantes rapidamente. Um ótimo 
+                         recurso para quem está procurando uma nova posição!</p><br><br>
+                        
+                </div>
+                <div class="card">
+                    <img src="usuario.avif">
+                    <h3>João de Souza</h3>
+                    <p>Excelente site de vagas! Interface intuitiva, fácil de navegar 
+                        e com muitas oportunidades de emprego atualizadas diariamente. 
+                        Encontrei meu novo emprego aqui em poucas semanas. Recomendo a 
+                        todos que estão em busca de novas oportunidades!</p><br>
+                
+                </div>
+            </div>
+        </section>
+
+        <div class="campo-pesquisa">
+            <div class="titulo-pesquisa"><h2>PESQUISAR VAGAS</h2> </div>
+            <form action="#">
+                <input type="text" placeholder="Pesquisar...">
+                <input type="submit" value="Pesquisar">
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Rodapé - © 2024 IT JOBS</p>
+    </footer>
+
+</body>
+</html>
+
+  
