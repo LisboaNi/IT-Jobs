@@ -1,84 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Empresa</title>
-    <link rel="stylesheet" href="Geral.css">
-    <script src="Geral.js"></script>
-    <script src="P_Empresa.js"></script>
-
-    <style>
-    .container{
-        max-width: 1500px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: white;
-    }
-
-    button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    </style>
-</head>
-<body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peril Empresa</title>
+    <link rel="stylesheet" href="T_Perfil_Profissional.css" />
+    <link rel="stylesheet" href="Geral.css" />
+  </head>
+  <body>
     <header>
-        <div id="menu-btn">&#9776;</div>
-        <div id="menu">
+      <div id="menu-btn">&#9776;</div>
+      <div id="menu">
+        <ul>
+          <li><a href="T_Inicial.html">PÁGINA INICIAL</a></li>
+          <li><a href="T_Cadastro_Login.html">LOGIN / CADASTRO</a></li>
+          <li><a href="T_Pesquisa.html">PESQUISA DE VAGAS</a></li>
+        </ul>
+      </div>
+      <header class="cabeçario">
+        <nav><h1>IT JOBS</h1></nav>
+        <nav>
           <ul>
-            <li><a href="inicio.html">PÁGINA INICIAL</a></li>
-            <li><a href="T_Cadastro_Login.html">LOGIN / CADASTRO</a></li>
-            <li><a href="T_Pesquisa.html">PESQUISA DE VAGAS</a></li>
+            <li><a href="T_Busca_De_Vagas.html">VAGAS &nbsp;|</a></li>
+            <li><a href="T_Inicial.html">INICIO &nbsp;|</a></li>
+            <li><a href="T_Cadastro_Login.html" class="botao">LOGIN</a></li>
           </ul>
-        </div>
-        <header class="cabeçario">
-            <nav><h1>IT JOBS</h1></nav>
-            <nav><ul>
-                <li><a href="vagas.html">VAGAS &nbsp;|</a></li>
-                <li><a href="inicio.html">INICIO &nbsp;|</a></li>
-                <li><a href="T_Cadastro_Login.html" class="botao">LOGIN</a></li>
-            </ul></nav>
-        </header>
+        </nav>
+      </header>
     </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <h1>Perfil do Usuário</h1>
-                <div id="profile">
-                    <img id="profile-image" src="" alt="Foto de perfil" width="200" height="150">
-                    <p><strong>Nome:</strong> <span id="name"></span></p>
-                    <p><strong>Email:</strong> <span id="email"></span></p>
-                    <p><strong>Idade:</strong> <span id="age"></span></p>
-                    <button onclick="editProfile()">Editar Perfil</button>
-                </div>
-        </section>
-    </main>
+    <div class="container">
+      <div class="perfil">
+        <div class="foto">
+          <img src="img.png" alt="Foto da Empresa" />
+        </div>
+        <div class="descricao">
+          <h1>IT JOBS</h1>
+          <p>Descrição breve do perfil da empresa.</p>
+        </div>
+      </div>
+      <div class="informacoes">
+        <h2>Informações Relevantes</h2>
+
+        <div class="campo">
+          <label for="endereco">Endereço:</label>
+          <span id="endereco">Rua Exemplo, 123, São Paulo, SP</span>
+        </div>
+        <div class="campo">
+          <label for="experiencia">Ramo:</label>
+          <span id="experiencia">5 anos em desenvolvimento web</span>
+        </div>
+        <div class="campo">
+          <label for="educacao">Sobre:</label>
+          <span id="educacao"
+            >O IT Jobs é uma plataforma inovadora que visa conectar empresas em
+            busca de talentos com profissionais qualificados embusca de
+            oportunidades de emprego. Nosso objetivo é facilitar o processo de
+            recrutamento e seleção, proporcionando uma experiência eficiente e
+            transparente para ambas as partes. O mercado de TI cresce
+            diariamente em resposta à necessidade de conhecimento em diversas
+            áreas da tecnologia da informação, demandadas por várias empresas. O
+            avanço do mercado de TI foi acelerado pela pandemia da COVID-19,
+            forçando as empresas a procurar novos meios de funcionamento.</span
+          >
+        </div>
+      </div>
+    </div>
 
     <footer class="rodape">
-        <p>Rodapé - © 2024 IT JOBS</p>
+      <p>Rodapé - © 2024 IT JOBS</p>
     </footer>
-
-</body>
+  </body>
 </html>
