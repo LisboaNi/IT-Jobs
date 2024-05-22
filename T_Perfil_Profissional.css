@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.foto {
+  flex: 0 0 150px;
+  margin-right: 20px;
+}
+
+.foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.descricao {
+  flex: 1;
+}
+
+.descricao h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.descricao p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.informacoes {
+  margin-top: 20px;
+}
+
+.informacoes h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.campo label {
+  width: 150px;
+  font-weight: bold;
+  color: #333;
+}
+
+.campo span {
+  color: #666;
+}
